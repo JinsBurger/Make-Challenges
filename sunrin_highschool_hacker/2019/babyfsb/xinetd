@@ -1,0 +1,12 @@
+service babyfsb
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/babyfsb/start.sh
+        socket_type = stream
+        protocol = tcp
+        user = babyfsb
+        port = 3000
+        flags = REUSE
+}

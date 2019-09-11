@@ -1,0 +1,13 @@
+service attack
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/strange_file/problem
+        socket_type = stream
+        protocol = tcp
+        user = strange_file
+        port = 3000
+        flags = REUSE
+}
+

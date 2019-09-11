@@ -1,0 +1,13 @@
+service babygdb
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /usr/bin/gdb
+        socket_type = stream
+        protocol = tcp
+        user = babygdb
+        port = 3003
+        flags = REUSE
+        server_args     = --command /home/babygdb/run_gdb.py
+}
